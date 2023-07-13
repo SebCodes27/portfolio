@@ -6,12 +6,7 @@
 }
 
 * {
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-html {
-  border: 8px groove beige;
 }
 
 header {
@@ -19,7 +14,7 @@ header {
   height: 50px;
   background: black;
   display: flex;
-  position: fixed;
+  position: sticky;
   justify-content: right;
   align-items: center;
   top: 0;
@@ -43,6 +38,7 @@ p > a {
 body {
   background:#831616;
   margin: 0;
+  border: 8px groove beige;
 }
 
 main {
