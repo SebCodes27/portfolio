@@ -7,42 +7,52 @@
 
 * {
   font-family: Arial, Helvetica, sans-serif;
+  color: #0000008b;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding-bottom: 40px;
 }
 
 header {
   width: 100%;
-  height: 50px;
+  height: 70px;
   background: black;
   display: flex;
-  position: sticky;
+  position:fixed;
   justify-content: right;
   align-items: center;
   top: 0;
   left: 0;
 }
 
-.indent {
-  margin-left: 4px;
-
+#top-anchor {
+  width: 0;
+  height: 52px;
 }
 
-p > a {
+#mid-anchor {
+  width: 0;
+  height: 50px;
+  margin-top: -50px;
+}
+
+#bot-anchor {
+  width: 0;
+  height: 50px;
+  margin-top: -50px;
+}
+
+a {
   color: inherit;
   text-decoration: none;
 }
 
-.indent:hover {
-  color: #FF7414;
-}
-
 body {
-  background:#831616;
+  background:rgb(87, 231, 231);
   margin: 0;
   border: 8px groove beige;
-}
-
-main {
-  padding-top: 10px;
 }
 
 nav > ul {
@@ -51,14 +61,13 @@ nav > ul {
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.3rem;
-  padding-right: 0.5rem;
-  padding-inline-start: 0;
+  padding-right: 10px;
   margin-block: 0;
 }
 
 nav > ul > li {
   display: block;
-  padding: 0.2rem;
+  padding: 30px;
   margin: 0 0.2rem;
   padding-right: 0.4rem;
 }
@@ -73,26 +82,28 @@ nav > ul > li {
 
 .samples img {
   width: 100%;
-  max-width: 350px;
+  max-width: 380px;
   height:auto;
-  padding: 5px;
-  border-radius: 20px
+  padding: 10px;
+  border-radius: 20px;
+  transition: .5s;
 }
 
-h1, h2, h3, p {
+.large-img img {
+  max-width: 1000px;
+}
+
+.center {
   text-align: center;
-  color: #FFF914
 }
 
 h1, h2, h3 {
-  padding-top: 60px
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #profile-link {
   color: yellow;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 span {
@@ -102,20 +113,184 @@ span {
 footer > p {
   display: flex;
   justify-content: right;
-  padding-left: 95%;
+  padding-left: 85%;
   max-width: 20%;
   position: relative;
 }
 
-h2 {
-  border-top: 3px solid #760808;
-  border-bottom: 3px solid #760808;
-}
-
-h3 {
-  border-top: 3px solid #760808;
-}
-
 a {
   color: white;
+}
+
+
+.fiftyPerc {
+  width: 48.5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.seventyPerc {
+  width: 65%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sixtyPerc {
+  width: 55%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fourtyPerc {
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.thirtyPerc {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inline {
+  width: 60%;
+  margin: auto;
+  align-items: center;
+}
+
+#profile-pic {
+  width: 100%;
+}
+
+#github-pic {
+  max-width: 150px;
+}
+
+/* div {
+    border: solid brown 5px;
+} */
+
+.indent {
+  padding-left: 100px;
+}
+
+.blue {
+  color: rgba(40, 40, 247, 0.468);
+}
+
+.blue-hover:hover p {
+  color:rgba(40, 40, 247, 0.468);
+  transition: .5s;
+  margin-top: 1.5px;
+}
+
+.blue-hover:hover img {
+  max-width: 420px;
+  transition: .5s;
+}
+
+.green {
+  color: rgb(12, 179, 12);
+}
+
+.green-hover:hover p {
+  color: rgb(12, 179, 12);
+  transition: .5s;
+  margin-top: 1.5px;
+}
+
+.green-hover:hover img {
+  max-width: 420px;
+  transition: .5s;
+}
+
+.gold {
+  color: rgba(218, 191, 42, 0.92);
+}
+
+.gold-hover:hover p {
+  color: rgba(218, 191, 42, 0.92);
+  transition: .5s;
+}
+
+.blue-white {
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.black {
+  color: black;
+}
+
+.lg-text {
+  font-size: 1.6rem;
+  margin-top: 7px;
+  transition: .5s;
+}
+
+.left {
+  text-align: start;
+}
+
+.ninetyPerc {
+  width: 92%;
+  margin: auto;
+  align-items: left;
+}
+
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+#about-me {
+  overflow: hidden;
+}
+
+#about-me div p:not(.no-indent), i, .fa {
+  color: green;
+  text-indent: 30px;
+}
+
+.fa {
+  text-indent: 0px;
+  color: green;
+}
+
+.tall-box {
+  height: 350px;
+  align-items: center;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.tall-box img {
+  border-radius: 200px;
+}
+
+h4 {
+  padding-top: 0px;
+  font-size: 1.8em;
+}
+
+.border-1 {
+  border: solid 3px white;
+  background-color: beige;
+}
+
+.align-right {
+  align-items: right;
+}
+
+#github {
+  padding-left: 80px;
 }

@@ -5,48 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./project.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Personal Portfolio Sebastian Garcia</title>
   </head>
   <body>
     <header>
       <nav id="navbar">
         <ul>
-          <li><a href="#welcome-section">Welcome</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#profile">Profile</a></li>
+          <li><a href="#top-anchor">Welcome</a></li>
+          <li><a href="#mid-anchor">Projects</a></li>
+          <li><a href="#bot-anchor">Profile</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="welcome-section">
-        <h1>Hello World! Welcome to my Portfolio...</h1>
-        <p>by Sebastian Garcia <a id="profile-link" href="https://github.com/SebCodes27" target="_blank"><span class="indent">(or SebCodes)</span></a></p>
+      <div id="top-anchor"></div>
+      <div id="welcome-section">
+        <h1 class="center border-1">Hello World! Welcome to <a id="profile-link" href="https://github.com/SebCodes27" target="_blank"><span>SebCodes'</span></a> portfolio!</h1>
+        <div id="about-me" class="inline">
+          <div class="fiftyPerc tall-box">
+            <img id='profile-pic' src="./images/profile.png">
+            <h4 class="center">Sebastian Garcia</h4>
+          </div>
+          <div class="fiftyPerc float-right">
+            <p class="indent-para">About me: My name is Sebastian, and I am a part-time coder and one of Jehovah's Witnesses.</p>
+            <p>Most of my instruction over the past year has come from freeCodeCamp <i class="fa fa-free-code-camp"></i>, and it's taught me much about intuitive thinking and problem solving since then. <i>Lots</i> of problem solving, heh.</span></p>
+            <p>There is still much I have to learn and gain experience from, but my work and dedication is something I take very seriously. Please see what I've worked on so far!</p>
+          </div>
         </div>
-      </section>
-      <section id="projects">
-        <h2>⬇Take a look at some of my projects here!⬇</h2>
+        <div id='mid-anchor'></div>
+        <h2 class="center full-width border-1">Browse through some of what I have to offer below.</h2>
+      <div id="projects">
+        <h2 class="indent"><span class='blue'>Work Samples</span>/<span class="green">Personal Projects</span></h2>
         <div class="samples">
-        <div class="project-tile">
-          <a href="https://sebcodes27.github.io/fccproj1/project.html"><img src="https://i.ibb.co/gTgpfJz/WS1.png"></img></a>
+          <div class="project-tile blue-hover">
+            <a href="https://sebcodes27.github.io/Familia_Salsera_Draft1/">
+            <img src="./images/familiaSalsera.jpg"></img>
+            <p class="center lg-text">Dance Marketing</p>
+            </a>
+          </div>
+          <div class="project-tile green-hover">
+            <a href="https://sebcodes27.github.io/Random_Quote_Machine/">
+            <img src="./images/quoteGen.jpg"></img>
+            <p class="center lg-text">Random Quote Machine</p>
+            </a>
+          </div>
+          <div class="project-tile green-hover">
+            <a href="https://sebcodes27.github.io/Drum_Machine/">
+            <img src="./images/drumPad.jpg"></img>
+            <p class="center lg-text">Drum Pad</p>
+            </a>
+          </div>
+          <div class="project-tile green-hover">
+            <a href="https://sebcodes27.github.io/CalculatorV2/">
+            <img src="./images/quickCalc.jpg"></img>
+            <p class="center lg-text">Calculator</p>
+            </a>
+          </div>
+          <div class="project-tile green-hover">
+            <a href="https://sebcodes27.github.io/25Plus5Clock/">
+            <img src="./images/timer25By5.jpg"></img>
+            <p class="center lg-text">Timer and Break</p>
+            </a>
+          </div>
         </div>
-        <div class="project-tile">
-          <a href="https://sebcodes27.github.io/fccproj2/project.html"><img src="https://i.ibb.co/4NhgkHw/WS2.png"></img></a>
+      </div>
+      <div id="certifications">
+        <h2 class="indent gold">FreeCodeCamp Certificates</h2>
+        <div class="samples">
+          <div class="project-tile gold-hover">
+            <a href="https://www.freecodecamp.org/certification/Seb_Codes/responsive-web-design"><img src="./images/cert1.png"></img>
+            <p class="center lg-text">View Certificate</p></a>
+          </div>
+          <div class="project-tile gold-hover">
+            <a href="https://www.freecodecamp.org/certification/Seb_Codes/javascript-algorithms-and-data-structures"><img src="./images/cert2.png"></img>
+            <p class="center lg-text">View Certificate</p></a>
+          </div>
+          <div class="project-tile gold-hover">
+            <a href="https://www.freecodecamp.org/certification/Seb_Codes/front-end-development-libraries"><img src="./images/cert3.png"></img>
+            <p class="center lg-text">View Certificate</p></a>
+          </div>
         </div>
-        <div class="project-tile">
-          <a href="https://sebcodes27.github.io/fccproj3/project.html"><img src="https://i.ibb.co/MRrRrnX/WS3.png"></img></a>
+      </div>
+      <div>
+        <h2 class="indent blue-white">Continuous Github Advancement</h2>
+        <div class="samples large-img">
+          <div class="project-tile">
+            <a href="https://www.freecodecamp.org/certification/Seb_Codes/front-end-development-libraries"><img src="./images/gitAnalytics.png"></img></a>
+            <p class="center">Last recorded July 14, 2023</p>
+          </div>
         </div>
-        <div class="project-tile">
-          <a href="https://sebcodes27.github.io/fccproj4/project.html"><img src="https://i.ibb.co/2W1nnXm/WS4.png"></img></a>
+      </div>
+      <div id="profile">
+        <div id='bot-anchor'></div>
+        <h3 class="center border-1">Or come visit my official coding webpage, all visitors are super welcome!</h3>
+        <div class="samples ninetyPerc">
+          <div id="github" class="fiftyPerc">
+            <div class="fourtyPerc">
+              <a id="profile-link" href="https://github.com/SebCodes27" target="_blank">
+                <img id='github-pic' src='./images/githubt-prof.png'></a>
+            </div>
+            <div class="sixtyPerc">
+              <p class="seventyPerc lg-text vertical-center"><a id="profile-link" href="https://github.com/SebCodes27" target="_blank">SebCodes27</a><br/><br/>Official Github:<br/>Repositories and Projects</p>
+            </div>
+          </div>
+          <div class="fiftyPerc vertical-center">
+              <h4 class="center">Contact Me:</h4>
+              <p class="center lg-text vertical-center">Email: sebastiangarcia.work02@gmail.com<br/><br/></p>
+              <p class="center lg-text vertical-center">LinkedIn: <a href="https://www.linkedin.com/in/sebastian-garcia-052976274" target="_blank">Follow Sebastian Garcia</a><br/></p>
+          </div>
         </div>
-        </div>
-      </section>
-      <section id="profile">
-        <h3><i>Or</i> come visit my official coding webpage, all visitors are <i>super</i> welcome!</h3>
-        <p>We'll have some tea and codes, yes?</p>
-        <a id="profile-link" href="https://github.com/SebCodes27" target="_blank"><i class="fab fa-github"></i>Github</a>
-      </section>
+        <!-- <p>Employer reference</p> -->
+ 
+          </div>
+      </div>
     </main>
-    <footer>
-      <p>© Created for freeCodeCamp</p>
   </body>
 </html>
