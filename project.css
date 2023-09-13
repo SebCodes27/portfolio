@@ -1,52 +1,7 @@
-@media only screen and (min-width: 600px) {
-  h1, h2, h3 {
-    font-size: 2rem;
-  }
-  p {font-size: 1.3rem;}
-}
-
 * {
   font-family: Arial, Helvetica, sans-serif;
   color: #0000008b;
   scroll-behavior: smooth;
-}
-
-main {
-  padding-bottom: 40px;
-}
-
-header {
-  width: 100%;
-  height: 70px;
-  background: black;
-  display: flex;
-  position:fixed;
-  justify-content: right;
-  align-items: center;
-  top: 0;
-  left: 0;
-}
-
-#top-anchor {
-  width: 0;
-  height: 52px;
-}
-
-#mid-anchor {
-  width: 0;
-  height: 50px;
-  margin-top: -50px;
-}
-
-#bot-anchor {
-  width: 0;
-  height: 50px;
-  margin-top: -50px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 body {
@@ -55,88 +10,76 @@ body {
   border: 8px groove beige;
 }
 
-nav > ul {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 1.3rem;
-  padding-right: 10px;
-  margin-block: 0;
-}
-
-nav > ul > li {
-  display: block;
-  padding: 30px;
-  margin: 0 0.2rem;
-  padding-right: 0.4rem;
-}
-
-.samples {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.samples img {
+main {
+  padding-bottom: 40px;
   width: 100%;
-  max-width: 380px;
-  height:auto;
-  padding: 10px;
-  border-radius: 20px;
-  transition: .5s;
 }
 
-.large-img img {
-  max-width: 1000px;
+/* Decoration Section */
+
+.frame {
+  padding-top: 50px;
 }
 
-.center {
-  text-align: center;
+.main-div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 45px;
+  /* border: blue solid 2px; */
 }
 
 h1, h2, h3 {
+  font-size: 2rem;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-#profile-link {
-  color: yellow;
+h4 {
+  padding: 0px;
+  font-size: 1.8em;
 }
 
-span {
-  margin-top: 2px;
-}
-
-footer > p {
-  display: flex;
-  justify-content: right;
-  padding-left: 85%;
-  max-width: 20%;
-  position: relative;
+p {
+  font-size: 1.3rem;
 }
 
 a {
   color: white;
+  text-decoration: none;
 }
 
-
-.fiftyPerc {
-  width: 48.5%;
-  display: inline-block;
-  vertical-align: middle;
+.lg-text {
+  font-size: 1.6rem;
+  margin-top: 7px;
+  transition: .5s;
 }
 
-.seventyPerc {
-  width: 65%;
-  display: inline-block;
-  vertical-align: middle;
+/* POSITION/SPACING */
+
+.center, .center2 {
+  text-align: center;
 }
 
-.sixtyPerc {
-  width: 55%;
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.align-right {
+  align-items: right;
+}
+
+.padding-top {
+  padding-top: 100px;
+}
+
+.indent {
+  padding-left: 100px;
+}
+
+.thirtyPerc {
+  width: 25%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -147,33 +90,48 @@ a {
   vertical-align: middle;
 }
 
-.thirtyPerc {
-  width: 25%;
+.fiftyPerc {
+  width: 48.5%;
   display: inline-block;
   vertical-align: middle;
 }
 
-.inline {
-  width: 60%;
+.sixtyPerc {
+  width: 55%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.seventyPerc {
+  width: 65%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ninetyPerc {
+  width: 92%;
   margin: auto;
-  align-items: center;
 }
 
-#profile-pic {
-  width: 100%;
+.fourtyPerc2 {
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-#github-pic {
-  max-width: 150px;
+.fourtyPerc3 {
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-/* div {
-    border: solid brown 5px;
-} */
-
-.indent {
-  padding-left: 100px;
+.fiftyPerc2 {
+  width: 48.5%;
+  display: inline-block;
+  vertical-align: middle;
 }
+
+/* COLOR */
 
 .blue {
   color: rgba(40, 40, 247, 0.468);
@@ -223,74 +181,198 @@ a {
   color: black;
 }
 
-.lg-text {
-  font-size: 1.6rem;
-  margin-top: 7px;
-  transition: .5s;
+.border-1 {
+  border: solid 3px white;
+  background-color: beige;
 }
 
-.left {
-  text-align: start;
+/* End of Decoration Section */
+
+/* Header Section */
+
+header {
+  width: 100%;
+  height: 70px;
+  background: black;
+  display: flex;
+  position:fixed;
+  justify-content: right;
+  align-items: center;
+  top: 0;
+  left: 0;
 }
 
-.ninetyPerc {
-  width: 92%;
-  margin: auto;
-  align-items: left;
+nav > ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+  padding-right: 10px;
+  margin-block: 0;
 }
 
-.vertical-center {
-  margin-top: auto;
-  margin-bottom: auto;
+nav > ul > li {
+  display: block;
+  padding: 30px;
+  margin: 0 0.2rem;
+  padding-right: 0.4rem;
 }
 
-.float-right {
-  float: right;
-}
+/* End of Header Section */
 
-.float-left {
-  float: left;
-}
+/* Home Section */
 
 #about-me {
   overflow: hidden;
+  margin-top: 50px;
 }
 
-#about-me div p:not(.no-indent), i, .fa {
+#profile-pic {
+  width: 100%;
+  border-radius: 200px;
+}
+
+#intro {
+  margin-top: 35px;
+  float: right;
+  vertical-align: top;
+}
+
+#intro > p, i {
   color: green;
   text-indent: 30px;
 }
 
 .fa {
   text-indent: 0px;
-  color: green;
 }
 
-.tall-box {
-  height: 350px;
+/* End of Home Section */
+
+/* Projects Section */
+
+.samples {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+}
+
+.samples img {
+  width: 100%;
+  max-width: 380px;
+  height:auto;
+  padding: 10px;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.large-img img {
+  max-width: 1000px;
+}
+
+.wideImg {
+  display: block;
+  width: 95%;
   margin: auto;
-  padding-top: 25px;
 }
 
-.tall-box img {
-  border-radius: 200px;
+/* End of Projects Section */
+
+/* Profile Section */
+
+#contact-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
 }
 
-h4 {
-  padding-top: 0px;
-  font-size: 1.8em;
+#profile-link {
+  color: yellow;
 }
 
-.border-1 {
-  border: solid 3px white;
-  background-color: beige;
+#github-pic {
+  max-width: 150px;
+  padding-bottom: 32px;
 }
 
-.align-right {
-  align-items: right;
+#github-info {
+  vertical-align: bottom;
+  padding-bottom: 2px;
 }
 
-#github {
-  padding-left: 80px;
+/* End of Profile Section */
+
+/* div {
+    border: solid brown 5px;
+} */
+
+@media screen and (max-width: 1250px) {
+  .fourtyPerc {
+    width: 100%;
+    display: block;
+  }
+  .fiftyPerc {
+    width: 100%;
+    display: block;
+  }
+  .sixtyPerc {
+    width: 100%;
+    display: block;
+  }
+  .seventyPerc {
+    width: 100%;
+    display: block;
+  }
+  .fourtyPerc3 {
+    width: 450px;
+  }
+  .center2 {
+    text-align: left;
+  }
+  #profile-pic {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .indent {
+    padding-left: 0;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    h2, h4, .lg-text {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1em;
+    }
+    #intro {
+      margin-top: 0;
+      float: none;
+    }
+    .wideImg {
+      margin: 0;
+    }
+    #contact-info > div > .lg-text, #contact-info > div > div > .lg-text {
+      font-size: 1em;
+    }
+    #github-info {
+      vertical-align: top;
+    }
+    #github-pic {
+      width: 100px;
+      margin-top: 35px;
+      margin-right: -20px;
+    }
 }
