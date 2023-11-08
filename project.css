@@ -1,16 +1,19 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #0000008b;
+  font-family: 'Merriweather', serif;
+  color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
 
 body {
-  background:rgb(87, 231, 231);
+  background-image: url(./images/background2.png);
+  background-color: green;
+  width: 100%;
   margin: 0;
   border: 8px groove beige;
 }
 
 main {
+  background-color: #fdfd93c3;
   padding-bottom: 40px;
   width: 100%;
 }
@@ -133,12 +136,24 @@ a {
 
 /* COLOR */
 
+.shadow {
+  text-shadow: 0 0 2px black;
+}
+
+.black {
+  color: black;
+}
+
+.gray {
+  color: rgb(95, 95, 95);
+}
+
 .blue {
-  color: rgba(40, 40, 247, 0.468);
+  color: rgb(0, 0, 0);
 }
 
 .blue-hover:hover p {
-  color:rgba(40, 40, 247, 0.468);
+  color:rgb(0, 0, 0);
   transition: .5s;
   margin-top: 1.5px;
 }
@@ -149,11 +164,11 @@ a {
 }
 
 .green {
-  color: rgb(12, 179, 12);
+  color: rgb(0, 0, 0);
 }
 
 .green-hover:hover p {
-  color: rgb(12, 179, 12);
+  color: rgb(0, 0, 0);
   transition: .5s;
   margin-top: 1.5px;
 }
@@ -164,11 +179,11 @@ a {
 }
 
 .gold {
-  color: rgba(218, 191, 42, 0.92);
+  color: rgba(245, 218, 69, 0.92);
 }
 
 .gold-hover:hover p {
-  color: rgba(218, 191, 42, 0.92);
+  color: rgba(245, 218, 69, 0.92);
   transition: .5s;
 }
 
@@ -183,7 +198,7 @@ a {
 
 .border-1 {
   border: solid 3px white;
-  background-color: beige;
+  background-color: #105422;
 }
 
 /* End of Decoration Section */
@@ -240,7 +255,7 @@ nav > ul > li {
 }
 
 #intro > p, i {
-  color: green;
+  color: rgb(0, 0, 0);
   text-indent: 30px;
 }
 
