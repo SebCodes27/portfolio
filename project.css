@@ -179,11 +179,11 @@ a {
 }
 
 .gold {
-  color: rgba(245, 218, 69, 0.92);
+  color: black;
 }
 
 .gold-hover:hover p {
-  color: rgba(245, 218, 69, 0.92);
+  color: black;
   transition: .5s;
 }
 
@@ -197,7 +197,7 @@ a {
 }
 
 .border-1 {
-  border: solid 3px white;
+  border: solid 2px white;
   background-color: #105422;
 }
 
@@ -304,10 +304,6 @@ nav > ul > li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: top;
-}
-
-#profile-link {
-  color: yellow;
 }
 
 #github-pic {
